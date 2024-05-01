@@ -11,6 +11,8 @@ import authRoute from "./Routes/authRoute.js"
 
 dotEnv.config()
 ConnectDB()
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const app = express()
 
 
