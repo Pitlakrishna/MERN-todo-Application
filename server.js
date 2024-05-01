@@ -17,7 +17,9 @@ const app = express()
 
 
 app.use(cors({
-          origin : ["https://deploy-mern-"]
+          origin : [""],
+          methods: ["POST" , "GET" ] ,
+          "credentials" : true
      }))
 app.use(express.json())
 app.use(morgan("dev"))
