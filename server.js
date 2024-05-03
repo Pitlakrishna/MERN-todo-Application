@@ -26,9 +26,6 @@ app.use('/api/v1/task', authRoute)
 app.use('*', function (req, res) {
      res.sendFile(path.join(__dirname, './client/build/index.html'))
  })
-
-const PORT = process.env.PORT || 8000;
-
-app.listen(PORT, () => {
+app.listen( 8080 , () => {
     console.log(`Server connected to port 8080 ..     `.bgCyan.white)
 })
